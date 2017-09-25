@@ -203,7 +203,7 @@ def sum_sequence(sequence):
       :type sequence: list or tuple (of integers)
     """
     # ------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # DONE: 3. Implement and test this function.
     #          Tests have been written for you (above).
     #
     # RESTRICTION:
@@ -212,7 +212,10 @@ def sum_sequence(sequence):
     #      -- The TESTING code above does use   built_ins.sum
     #         as an ORACLE in TESTING this function, however.
     # ------------------------------------------------------------------
-
+    sum = 0
+    for k in range(len(sequence)):
+        sum = sum + sequence[k]
+    return sum
 
 def run_test_count_items_bigger_than():
     """ Tests the   count_items_bigger_than   function. """
@@ -400,7 +403,7 @@ def count_items_bigger_than(numbers, threshold):
     # ------------------------------------------------------------------
     count = 0
     for k in range(len(numbers)):
-        if numbers[k] > threshold
+        if numbers[k] > threshold:
             count = count + 1
     return count
 
